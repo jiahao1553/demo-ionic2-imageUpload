@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <button ion-button color="primary" (click)="accessGallery()">Open Gallery</button>
+ <img [src]="base64Image" *ngIf="base64Image" />
+ {{base64Image}}
+ The file id is: {{fileID}}
+ <button ion-button color="danger" (click)="upload()">Upload</button>
+</ion-content>
